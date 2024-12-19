@@ -25,6 +25,8 @@ jobs:
     # debug using the action
     - name: Debug OIDC Claims
       uses: github/actions-oidc-debugger@main
+      with:
+        audience: '${{ github.server_url }}/${{ github.repository_owner }}'
 
   # This workflow contains a single job called "build"
   build:
