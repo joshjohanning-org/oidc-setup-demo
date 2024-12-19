@@ -29,7 +29,7 @@ jobs:
         audience: '${{ github.server_url }}/${{ github.repository_owner }}'
 
   build-new:
-    uses: joshjohanning-org/reusable-workflows/blob/main/.github/workflows/azure-oidc-sample.yml@v1
+    uses: joshjohanning-org/reusable-workflows/.github/workflows/azure-oidc-sample.yml@v1
       
   # This workflow contains a single job called "build"
   build-old:
